@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.gestodegastos.ReceitasActivity"
+    tools:showIn="@layout/activity_receitas2"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a categoria:"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_categoria_receita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: Água"
+        android:onClick="categoria"
+        />
+
+    <TextView
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Digite o valor da receita:"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_valor_receita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: R$ 0,00"
+        android:inputType="number"
+        android:onClick="valor_receita"
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_descricao_receita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: Descrição..."
+        android:inputType="text"
+        android:onClick="valor_receita"
+
+        />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a data do Depósito "
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_data_receita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex: 00/00/0000"
+        android:inputType="date"
+        android:onClick="data_receita"
+
+        />
+
+</LinearLayout>
